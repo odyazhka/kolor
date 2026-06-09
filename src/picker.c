@@ -382,7 +382,7 @@ int run_picker(const char *init_hex, char *out_hex) {
     win = XCreateSimpleWindow(dpy,RootWindow(dpy,scr),
                               100,100,WIN_W,WIN_H,0,
                               BlackPixel(dpy,scr),pixel_from_hex(C_BG));
-    XStoreName(dpy,win,"Color Picker");
+    XStoreName(dpy,win,"Выбор цвета");
 
     XSizeHints *sh = XAllocSizeHints();
     sh->flags      = PMinSize;
